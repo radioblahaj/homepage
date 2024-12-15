@@ -23,16 +23,17 @@ import Card from '../components/Card.astro';
 import { array } from "astro:schema";
 
 		 var element = document.getElementById('random');
-        
 		 let colors = [
-			"blue",
-			"yellow",
 			"orange",
-			"green"
+			"white",
+			"skyblue",
+			"mustardyellow",
+			"green",
 		 ]
 
-        element.style.color = colors[Math.floor(Math.random() * colors.length)]
-
+		 setInterval(function() {
+  element.style.color = colors[Math.floor(Math.random() * colors.length)];
+}, 5000);
 	</script>
 </Layout>
 
