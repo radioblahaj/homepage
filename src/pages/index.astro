@@ -1,48 +1,98 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Image from "astro/components/Image.astro";
 ---
-
-
-
 
 <Layout title="Radioblahaj's website!">
 	<main>
-		<h1> Hi, I'm <span id="random"> Arav</span> <code> (he/him)</code></h1>
-		<i> "I'm young, scrappy, and hungry; I'm not throwing away my shot!" ~ Hamilton</i>
-		<p> This is a very <i> unfinished website</i>, so sorry in advance!</p>
-		<p> I'm a senior from Mississauga (near Toronto) who loves public transit, urban planning, books (a little bit of everything), reading magazines and newspapers, programming (sometimes), running/building online communites, and <a class="bold-link" href="/hackathons">running hackathons.</a> I also enjoy doing sound for school events whenever I get the chance ^.^ </p>
-		<p> My friends say I'm good at small talk, which I find ironic. I'm an extrovert forced to be an introvert. I should talk more, and smile more.  b. In my free time, I like spending time with my friends, working on projects, watching netflix, listening to music, and playing with my siblings</p>
-		<p> Currently, I'm trying to start a blog on Mississauga City Hall & Ontario Politics <span id="box"> this is a test</span>, at <a href="https://mississauga.report" class="bold-link">Mississauga Report</a>, and trying to figure out how to get more involved in politics. </p>
-		<p> I also work at Hack Club where I lead community operations helping with virtual events, fraud, newspaper/newsletter teams and a little bit of everything else. I also co-lead the moderation dept for a community of 40,000+ teenagers! </p>
-		<p> This May, I helped organize <a class="bold-link" href="https://apocalypse.hackclub.com">Apocalypse.</a> Apocalypse was a labour of love, a hackathon me and a few friends came up with in Septmember 2023, and it ended up becoming Canada's largest High School hackathon EVER </p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/QvCoISXfcE8?si=aKA84EcTOBX1c8fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>		
-	<p> The best place to contact me would be on Slack (@radioblahaj) or email me at my name @ this domain</p>
-	<p> See you around, Arav</p>
-	<img src="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"> 
+		<h1>Hi, I'm <span id="random"> Arav</span> <code> (he/him)</code></h1>
+		<i>
+			"I'm young, scrappy, and hungry; I'm not throwing away my shot!" ~
+			Hamilton
+		</i>
+		<p>This is a very <i> unfinished website</i>, so sorry in advance!</p>
+		<p>
+			I'm a senior from Mississauga (near Toronto) who loves public
+			transit, urban planning, books (a little bit of everything), reading
+			magazines and newspapers, programming (sometimes), running/building
+			online communites, and <a class="bold-link" href="/hackathons"
+				>running hackathons.</a
+			> I also enjoy doing sound for school events whenever I get the chance
+			^.^
+		</p>
+		<p>
+			Most people think I'm an introvert, but I'm an extrovert forced to
+			be an introvert. My friends say I'm good at small talk, which I find
+			ooldy fitting. In my free time, I like spending time with my
+			friends, working on projects, watching netflix, listening to music,
+			and playing with my siblings
+		</p>
+		<p>
+			Currently, I'm trying to start a blog on Mississauga City Hall &
+			Ontario Politics <span id="box"> this is a test</span>, at <a
+				href="https://mississauga.report"
+				class="bold-link">Mississauga Report</a
+			>, and trying to figure out how to get more involved in politics.
+		</p>
+		<p>
+			I also work at <a href="https://hackclub.com" class="bold-link">
+				Hack Club
+			</a> where I lead community operations overseeing & helping with virtual
+			events, fraud, newsletters and a little bit of everything else! I also
+			co-lead the moderation dept for a community of 40,000+ teenagers 🙈
+		</p>
+		<p>
+			This May, I helped organize <a
+				class="bold-link"
+				href="https://apocalypse.hackclub.com">Apocalypse.</a
+			> Apocalypse was a labour of love, a hackathon me and a few friends came
+			up with in Septmember 2023, and it ended up becoming Canada's largest
+			High School hackathon EVER
+		</p>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/QvCoISXfcE8?si=aKA84EcTOBX1c8fR"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen></iframe>
+		<p>
+			The best place to contact me would be on Slack (@radioblahaj) or
+			email me at my name @ this domain
+		</p>
+		<p>See you around, Arav</p>
+		<img alt="a drawing of a blahaj with a yellow background, and two small white bars on both sides. The Blahaj is smiling with two eyes"
+			src="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"
+		/>
 	</main>
 	<script>
-		 var element = document.getElementById('random');
-		 let colors = [
+		var element = document.getElementById("random");
+		let colors = [
 			"orange",
 			"white",
 			"skyblue",
 			"mustardyellow",
 			"deeppink",
-		 ]
-		 setInterval(function() {
-  element.style.color = colors[Math.floor(Math.random() * colors.length)];
-}, 1000);
+		];
+		setInterval(function () {
+			element.style.color =
+				colors[Math.floor(Math.random() * colors.length)];
+		}, 1000);
 	</script>
 </Layout>
 
-
 <style>
-
 	#box {
 		display: none;
 	}
-	
+
+	p::selection {
+		background: rgb(30, 41, 156);
+	}
+
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -66,15 +116,13 @@ import Card from '../components/Card.astro';
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 1em;
-
 	}
 	.bold-link {
 		color: #ffff00;
 	}
-	
-	 code {
+
+	code {
 		font-size: 24px;
 		font-weight: bold;
 	}
-
 </style>
