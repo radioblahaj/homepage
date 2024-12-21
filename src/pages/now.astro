@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Image from "astro/components/Image.astro";
+---
+
+<Layout title="Radioblahaj's website!">
+	<main>
+		<h1>
+			What am I up to right now?
+		</h1>
+		<ol>
+            <h3> 📄 The Basics</h3>
+            <li>I'm somewhere in Mississauga, I love Mississauga. I think it's one of those underated citites, but we have.. a lot of work to do</li>
+            <li>I'm currently in my first semester of Senior Year (I graduate in 6 months aaaa) </li>
+            <h3> ✨ Personal details</h3>
+            <li> I'm listening to a lot of <b>music</b>. Right now, mxmtoon, taylor swift, graice abrams, AJR, Twenty One Pilots, Nxdia, Noah Floresch the most!</li>
+           <ul>
+            <li> I obess over albums and songs, and my volt.fm profile proves that</li>
+           </ul>
+           <li> I'm trying to get more involed in <b>local politics</b>, and learning more about how those things work</li>
+           <li> I'm trying to start a <a href="https://mississauga.report" class="bold-link"> blog </a> covering niche political issues in Mississauga and the GTA to help with ^ and help others</li>
+            <h3> Work</h3>
+            <li>I'm working on running moderation at Hack Club & helping run community programs for High Seas/Hack Club</li>
+        </ol>
+	
+	</main>
+	
+</Layout>
+
+<style>
+	#expand {
+		display: none;
+	}
+
+	p::selection {
+		background: rgb(30, 41, 156);
+	}
+
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 0.1;
+	
+	}
+	.bold-link {
+		color: #ffff00;
+	}
+
+	code {
+		font-size: 24px;
+		font-weight: bold;
+	}
+</style>

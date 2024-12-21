@@ -6,19 +6,28 @@ import Image from "astro/components/Image.astro";
 
 <Layout title="Radioblahaj's website!">
 	<main>
-		<h1>Hi, I'm <span id="random"> Arav</span> <code> (he/him)</code></h1>
+		<h1>
+			Hi, I'm <span id="random"> Arav</span>
+			<code> (he/him)</code>
+		</h1>
+		
 		<i>
 			"I'm young, scrappy, and hungry; I'm not throwing away my shot!" ~
 			Hamilton
 		</i>
-		<p>This is a very <i> unfinished website</i>, so sorry in advance!</p>
+		<br> <br>
+		<b> Want to know what I'm doing right now? Check out my <a class="bold-link" href="/now"> /now</a> page</b>
+
 		<p>
 			I'm a senior from Mississauga (near Toronto) who loves public
 			transit, urban planning, books (a little bit of everything), reading
 			magazines and newspapers, programming (sometimes), running/building
-			online communites, and <a class="bold-link" href="/hackathons"
-				>running hackathons.</a
-			> I also enjoy doing sound for school events whenever I get the chance
+			online communites, and running <p id="holder">hackathons</p>
+			<span id="expand" class="bold-link"
+				>[(I've organized 3 hackathons in Toronto, and helped with 2
+				other hackathons in Vermont & New Delhi!)]</span
+			>
+			 I also enjoy doing sound for school events whenever I get the chance
 			^.^
 		</p>
 		<p>
@@ -64,12 +73,27 @@ import Image from "astro/components/Image.astro";
 			email me at my name @ this domain
 		</p>
 		<p>See you around, Arav</p>
-		<img alt="a drawing of a blahaj with a yellow background, and two small white bars on both sides. The Blahaj is smiling with two eyes"
+		<img
+			alt="a drawing of a blahaj with a yellow background, and two small white bars on both sides. The Blahaj is smiling with two eyes"
 			src="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"
 		/>
 	</main>
 	<script>
-		var element = document.getElementById("random");
+		let element = document.getElementById("random");
+		let holder = document.getElementById("holder");
+		let expand = document.getElementById("expand");
+		let display = "none";
+
+		holder.addEventListener("click", function () {
+			if (display == "none") {
+				display = "block";
+				expand.style.display = display;
+			} else {
+				let display = "none";
+				expand.style.display = display;
+			}
+		});
+
 		let colors = [
 			"orange",
 			"white",
@@ -85,7 +109,7 @@ import Image from "astro/components/Image.astro";
 </Layout>
 
 <style>
-	#box {
+	#expand {
 		display: none;
 	}
 
