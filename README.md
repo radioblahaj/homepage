@@ -5,6 +5,6 @@ My personal website built with Astro. It has a lot of fun little features like:
 
 - A color changing header (Arav changes colour randomly from a list of 4 colours)
 - Expandable text (try clicking on hackathons, I didn't want to yap for hours on my website and make it too much information so I added a button that lets you toggle extra information if you're curios, and toggle it on and off)
-- Some custom styling for links and content
+- Some custom styling for links and content (link colours, and a custom selection colour. Try selecting some text and see it change colour)
 - A /now page for people to see what I'm up to right now
   
