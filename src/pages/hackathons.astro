@@ -1,25 +1,105 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Image from "astro/components/Image.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1> Hackathons I've organized or helped with </h1>
-		<h3> I've organized <code> 3</code> hackathons, and I've helped organize parts of <code> 2</code> hackathons all over the world</b></h3>
-        <p> Going to my first hackathon changed my life. It made me realize that programming wasn't something I had to do alone, and made me realize that I could do anything.  When I attendted Assemble, I met teenagers just like me from all over the world. I met new friends, and worked together on a lot of wacky projects.</a> </p>
-        <h2> AngelHacks Toronto</h2>
-        <h3> May 27th 2024, 9 AM to 8 PM at WeWork Toronto</h3>
-		<p> The first hackathon I organized was AngelHacks Toronto. It was a satelite event for AngelHacks Boston! It was run at Wework Toronto and we had 50 people show up and make really awesome games in 12 hours. It taught me a lot about running hackathons, and we used the lessons for Apocalypse the year later!</p>
-		<h2> Apocalypse</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/QvCoISXfcE8?si=aKA84EcTOBX1c8fR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>	
-		<p> This May, I helped organize <a class="bold-link" href="https://hack.club/apocalypse-video"> Apocalypse. </a>  Apocalypse was a labour of love, a hackathon me and a few friends enviosned in Septmember. It ended up becoming Canada's largest High School Hackathon (150+ people!!) and longest hackathon (44 hours)! </p>
+<Layout title="Radioblahaj's website!">
 
-	</main>
+	<div>
+	  <h1>Musings from Toronto Meetup (&amp; how to run your own)</h1>
+	</div>
+	
+	<div>
+	  <h2>Backstory</h2>
+	  <p>I’ve always wanted to run a meetup to bring Toronto hack clubbers together! But every time I attempted one before, it never worked out. I’ve run hackathons before, but not with the focus of socialization. While Toronto has a super active community, hackathons always felt too busy. I always felt like I never really got the chance to talk to people individually or that I got enough ample time to socialize and make new friends – one of the many reasons I ran hackathons and attended them. But last winter, I had the opportunity to run a meetup in Toronto, and it was incredible.</p>
+	  <p>There is a tendency in online communities where there is a lack of physical connection. This is true in Hack Club and almost every other community I’ve been part of that’s tangentially computer-related. Programming and programming-related mediums are often solitary activities, and Hackathons attempt to solve this problem by bringing hackers together, build a long-term hacker community. Hackathons are great for just technical experiences, but they don’t give an opportunity to connect beyond just simple conversation.</p>
+	  <p>The fact is that hackathons have a culture of building and shipping, and that’s perfect for the problem it's attempting to solve. I think hackathons still have their place and should exist. But social connectivity is also vital. In communities like Hack Club, where there are teenagers from all over the world, there exist pockets where there are a lot of hack clubbers, but not a sub-community that you can just do things with. (In February, Hack Club ran an experiment called Mystic Tavern to encourage hack clubbers who took part in High Seas, a program we’ve run for the last 3 months online, to come together and meet other hack clubbers in their cities, over 10 taverns took place!)</p>
+	  <p>This has always bothered me because I always see a lot of people throughout Slack, and especially as Toronto’s hacker community has grown. I think meetups provide the missing middle of bringing people together; while hackathons allow for the base of a hacker community to form, meetups allow those people to gel from just acquaintances into real friend groups!</p>
+	  <p>A year and a half ago, it would have been impossible to get all of these hack clubbers in the same room. There wasn’t really a community of Toronto hack clubbers who were active or open to coming to these sorts of things. It wasn’t until we started building the community we wanted by running so many hackathons, and inspiring other people to run hackathons of their own, that Toronto had a bustling sub-community. It baffles me how much has changed since we first ran AngelHacks Toronto back in May 2023, and how it’s only been 2 years.</p>
+	</div>
+	
+	<div>
+	  <h2>Behind the scenes</h2>
+	  <p>On Sunday, December 29th, 2024, my two friends (Mutammim &amp; Alex Ren) ran a meetup for Hack Clubbers in Toronto. 25 people showed up, and it was by all accounts a success. It was a highly rewarding experience, and it was great being able to put names to faces and actually see everyone in one place.  The meetup from a desire to meet up while Alex was in town, and turned into a Toronto Hack Clubbers meetup from there.</p>
+	  <p>Organizing the meetup was a whirlwind — we didn’t expect to get this much interest and ended up organizing it with only 2 days to spare. In hindsight, this was our major pitfall because it made everything more scrappy. At first, we thought we’d have a small group and people and would be able to find somewhere last minute to hang out, like a cafe or Union Station. But our numbers kept on jumping, and our expectations changed as we jumped from 5 to 15 people with 3 days to spare. This is what caused us to scramble a lot, to find a place to fit everyone and come up with a proper plan to make sure everyone had a great time.</p>
+	  <p>We probably went through at least 3 or 4 alternate plans before settling on a cafe and then lunch either before or after.</p>
+	  <p>[insert photo of me calling cafes here]</p>
+	  <p>The day before the meetup, we noticed our RSVPs had increased again, and the hunt to find a venue was back. We had to change our plans again because it turned out that meeting at Union, and doing some sort of activity with 25 people, would be a mess.</p>
+	  <p>I ended up calling 11 cafes with Mutammim helping me find places to call and while we came up with last-minute plans in the background. Most cafes didn’t allow for reservations, and if they did, it was too late to book them &amp; too expensive for us. Finally, we found a cafe called Carbonic Cafe to hold 15 people, which said they could probably hold everyone. But when I called in the morning, they were too busy and they couldn’t fit 25 people, and everything we did the night before didn’t work. If one good thing came out of this, it’s the fact that I now know a plethora of cafes in Toronto if I ever need somewhere to work or hang out!</p>
+	  <p>So we decided to pivot, and change the meetup into two parts — lunch at Union’s food court &amp; social time at the cafe. We called it a night and decided to hope for the best tomorrow. Little did we know that our RSVPs had increased again, and we would have to end up changing our plans one last time.</p>
+	</div>
+	
+	<div>
+	  <h2>The actual meetup</h2>
+	  <p>When we got to Union, we had no venue after everyone showed up. It was awkward at first, but slowly everyone started interacting amongst themselves. They traded stickers, signed postcards, and trading cards, and formed into their own groups. People made an effort to include others people, and almost everyone had someone to talk with.</p>
+	  <p>What surprised me was that, even at the most chaotic times, people still bonded and had fun. One of my favourite memories is how I remember seeing someone feel uncomfortable and oddly quiet at Union, but eventually, they went up to two people they didn’t know before and spent the rest of the event with them. I think that says a lot about what the meetup was like.</p>
+	  <p>We ended up walking in the rain, scrambling to find somewhere else to fit everybody. None of this was ideal, especially when you have a group of 25 people looking at you for answers. Even when we were stuck in the rain, everyone kept up their energy. No one was really bored or felt restless. One attendee told me how he felt uncomfortable when he stepped into Union, but during “cafe-hopping”, he met new friends through the people he already knew.</p>
+	  <p>After more hopping around, we finally found a pizza restaurant that could fit everyone. We didn’t know what to expect, but the reviews were great, and they had a lot of space. We decided to take a chance on it, and I’m happy to say that it exceeded our expectations and was perfect.</p>
+	  <p>Hack Club was able to give us $200 USD for the meetup, and I’m beyond grateful for that. From the start, we knew that we wanted to make the meetup something everyone could experience, and that meant paying for food and transportation (as needed). This was really helpful because it made it easy for anyone to take part, and had no barriers.</p>
+	  <p>At the pizza place, we decided to buy 10 shareable pizzas. The pizzas were like Italian pizzas and were delicious. Everyone mentioned how much they loved the food, and were surprised – myself included!</p>
+	  <p>Lunch lasted about two hours, and we spent the time socializing with each other about all sorts of things at our own tables. It was really insightful and full of fun anecdotes.</p>
+	  <p>I don’t know what the other table got up to, but my group talked about everything from hackathons to what we were passionate about. It’s been a few months, and my memory is a bit fuzzy, but I remember being lost in the conversation.</p>
+	  <p>One thing we hoped to do was to run a show or have lighting talks, but venue complications made that difficult. At the end, though, we ended up having impromptu lighting talks and a show and tell aft. Alex showcased what she was working on at HQ, and Vivian gave a talk on Hamsters. Shoutout to Vivian for saving us there!!</p>
+	  <p>After almost 3 hours, we decided to call it quits and make a group trip in the rain to the mall and end it there. It was raining, and very few people had umbrellas. There was a bus available, but trying to get everyone on the bus would have been a mess. There was only one option left: walking in the rain. This is also where the meetup ended, albeit less exciting than I would have hoped.</p>
+	  <p><img src="image%204.png" alt="" width="526"></p>
+	</div>
+	
+	<div>
+	  <h2>Post meetup reflections</h2>
+	  <p>I’m proud of how the meetup turned out! I expected only a handful of friends and other people to show up, not 25. There were even some who travelled as far as 6 hours just to get there, and I find that really inspiring.</p>
+	  <p>A lot of the people who came weren’t very active members or people I knew. There were some people who attended events we’ve run before, people who live in Toronto and have done some stuff in Hack Club before, and even someone who wasn’t part of Hack Club at all. It was crazy how many people showed up, and how we were able to bring everyone together.</p>
+	  <p>I didn’t know what the meetup would be like at the start. This was my first time doing something like this, and I was nervous. I’ve run hackathons before, but running a smaller event like this wasn’t something I had experience with. Running hackathons ironically feels simpler than meetups, even though hackathons have a lot more complexity attached to them.</p>
+	  <p>I wanted this meetup to be a lightbulb moment for everyone who attended. You know that feeling you get when you find your group of people? People who you can relate to, and feel at home with, and where you feel like you belong?</p>
+	  <p>And that is inherently difficult. Social connectivity is tough, and finding people who can just do things with is not easy. When we started this meetup, this was the high expectation I wanted to achieve with it. I didn’t know if it was even possible or if meetups would bridge the gap. As hopeful as I sounded at the start of this post, it felt like something that wouldn’t hold true.</p>
+	  <p>But if there’s anything I’ve learned from all of this, it is that anything is possible when you’re passionate about it. The meetup brought that exact feeling to almost everyone who took a chance and showed up!  Mostly everyone I asked mentioned how much of a difference the meetup made for them, and how it was great to actually be in the same room as other teenagers just like them. It ended up becoming a big stepping stone for everyone, myself included</p>
+	  <p>It inspired people to run their own hackathons, talk in Hack Club more, and take part in other activities. One of the attendees is organizing a meetup for later this month, and I’m super excited about that.</p>
+	  <p>This is exactly why I ran this meetup, and I’m glad it worked :)</p>
+	</div>
+	
+	<div>
+	  <h2>What went well and what didn’t</h2>
+	  <p>There were a lot of roadblocks along the way, but everything worked out in the end. However, there are a few things I would have loved to do differently, and what I want to do in the future.</p>
+	  <p>For starters, we organized the bulk of the meetup in 3 days, after spending a month talking and thinking about it. The truth is that 25 people showing up was never considered to be a serious possibility, and we underestimated what that would be like. It ended up being no surprise that scrambling to book venues with 24-hour notice is near impossible. This was one of the things that made everything chaotic, and led us to “cafe-hopping”</p>
+	  <p>Another challenge we faced was a lack of structured activities. While everyone was able to come together, there was a lot more that could have been done to engage them. I briefly mentioned lighting talks and show and tell above, and I wish we were able to get almost everyone to run one of their own. If we run another meetup in the future, I would love to try and build it around activities like this.</p>
+	  <p>Food is something that ended up being all over the place as well. It's important to make sure you keep in mind dietary concerns and cost. From lessons learned, I found that shareable meals are the best for meetups because they make everyone interact and have a common experience. It’s also really cheap to buy a lot of food to share with people. We spent $150 out of $200, and ended up paying $10 USD per person. In a place like Toronto, where food is not cheap, $10 per person is a steal. But you need to find somewhere to fit everyone and book it in advance.</p>
+	  <p>It’s also really important to have a good opening and closing. Our opening was pretty good, and there was a lot of high energy. As we got closer to our  ending on the other hand, that energy fanned out. At the mall, everyone just separated into their groups and started making their way back home. If I could go back in time, the one thing I would do is a better closing ceremony. It might have helped if we had left the pizza restaurant earlier.</p>
+	  <p>Before I f
+		orget, thank you for showing up and helping me make this happen. Thank you especially to Mutammim and Alex for helping run the meetup day and supporting me when problems arose. The meetup wouldn’t have been the same without you &lt;3</p>
+	</div>
+	
+	<div>
+	  <h2>You should run a meetup</h2>
+	  <p>If there’s one thing I want you to leave with after reading this, it would be feeling inspired to run your meetup.</p>
+	  <p>Something I hear from a lot of people is that they feel scared to do one of their own, and feel like they wouldn’t be able to do it. This is normal, and I don’t blame you, but the truth is that it’s a lot easier than it seems. Heck like I mentioned before, this was my first time doing something like this and I had nothing to guide me there!</p>
+	  <p>If you want to bring people in your community together for whatever shared interest you have or have a lightbulb moment of your own, you should run a meetup. You just need to come with a fresh mind and a plan. To be cliche, the only limit is your imagination.</p>
+	  <p>If you want to run a meetup, I highly recommend doing it with more than one person. Ask your friends or even other community members for help, and make it happen. Doing it yourself is challenging, and it’s not something that you can put all on your shoulders.</p>
+	  <p>Every meetup is going to be different, but there are two types of meetups you can organize:</p>
+	  <ul>
+		<li>Social Hangouts<br>  - E.g., Pizza, Lunch, Cafes, etc</li>
+		<li>Go on an adventure<br>  - E.g., Hide and Seek, Geocaching, Transit trips, having an end goal</li>
+	  </ul>
+	  <p>What type of meetup you can run depends on your goals and personality. If you’re an introvert, you might feel more comfortable running a hangout event like a mini game of hide and seek, and if you’re an extrovert, you might feel more comfortable running a social event. Try to step out of your comfort zone a little.</p>
+	  <p>To repeat an earlier point, BOOK SPACE AHEAD OF TIME. I sound like a broken record, but this made all the difference for Toronto.</p>
+	  <p>No matter what, though, embrace the whimsical. The best moments from the Toronto meetup came from unexpected moments and impromptu activities. If you want other people to feel comfortable, be confident even when you’re panicking. We wouldn’t have found the pizza restaurant if it weren’t for a series of unfortunate events!</p>
+	  <p>If you need something to keep track of RSVPs and send information out, Luma is your friend. Luma made running the Toronto meetup so much easier for us because it let us focus on the big picture, and not the small details. It’s free to use, and a bonus is that you can also reach more people in your city to spread the word about your meetup. It also automatically sends feedback forms after your event is over, if that’s valuable to you.</p>
+	  <p>My email (arav@hackclub.com) is always open if you want advice or feedback on running your meetups, and if you're in Toronto, I would love to chat and grab a coffee with you.</p>
+	  <p>To whoever is reading this, I believe in you. Even if you don’t end up running a meetup in the foreseeable future, I hope this sticks around with you and that this inspires you to start attending events of your own.</p>
+	  <p>See you around ❤️</p>
+	</div>
+	
+	
 </Layout>
 
-
 <style>
+	#expand {
+		display: none;
+	}
+
+	p::selection {
+		background: rgb(30, 41, 156);
+	}
+
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -29,54 +109,24 @@ import Card from '../components/Card.astro';
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+	
+	#holder {
+		color: #00ff2f;
+		text-decoration: underline;
+		ecoration
 	}
 	h1 {
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1;
 		margin-bottom: 1em;
-
 	}
 	.bold-link {
 		color: #ffff00;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
+	
+	code {
+		font-size: 24px;
 		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
 	}
 </style>
