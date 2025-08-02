@@ -122,30 +122,37 @@ import Image from "astro/components/Image.astro";
             You can also email me at my name [@] this domain or signal me
             @radioblahaj.18.
         </p>
-        <iframe
-            src="https://webring.hackclub.com/embed.html"
-            width="90px"
-            height="60px"
-            frameborder="0"
-            ><iframe> <p> See you around <br /> Arav ❤️ </p> <img alt="a drawing
-            of a blahaj with a yellow background, and two small white bars on
-            both sides. The Blahaj is smiling with two eyes"
-            src="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"
-            /> <!-- <h2>Photos</h2> --> <!-- <h3>A collection of my favorite
+        <div>
+            <img src="https://cyber.dabamos.de/88x31/cssdif.gif" />
+            <!-- <img src="https://88x31.kate.pet/nb_noproblem.jpg" height="31" /> -->
+            <img src="https://88x31.kate.pet/madewith_macos.gif" height="31" />
+            <img src="https://88x31.kate.pet/button25.gif" height="31" />
+        </div>
+    </main>
+
+    <!-- <h2>Photos</h2> -->
+    <!-- <h3>A collection of my favorite
             photos and friends :)</h3> <!-- <div class="photos"> <img
             class="photos"
             src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4280428a7e980f161d3b846d394242a6755f7475_image.png"
-            /> </div> --> </main> <script> let element =
-            document.getElementById("random"); let holder =
-            document.getElementById("hide-video"); let expand =
-            document.getElementById("expand"); let display = "none";
-            holder.addEventListener("click", function () { if (display ==
-            "none") { display = "block"; expand.style.display = display; } else
-            { display = "none"; expand.style.display = display; } }); let colors
-            = [ "orange", "white", "skyblue", "mustardyellow", "deeppink", ];
-            setInterval(function () { element.style.color =
-            colors[Math.floor(Math.random() * colors.length)]; }, 1000);
-            </script> </Layout>
-        </iframe>
-    </main></Layout
->
+            /> </div> -->
+</Layout>
+<script>
+    let element = document.getElementById("random");
+    let holder = document.getElementById("hide-video");
+    let expand = document.getElementById("expand");
+    let display = "none";
+    holder.addEventListener("click", function () {
+        if (display == "none") {
+            display = "block";
+            expand.style.display = display;
+        } else {
+            display = "none";
+            expand.style.display = display;
+        }
+    });
+    let colors = ["orange", "white", "skyblue", "mustardyellow", "deeppink"];
+    setInterval(function () {
+        element.style.color = colors[Math.floor(Math.random() * colors.length)];
+    }, 1000);
+</script>
