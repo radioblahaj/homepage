@@ -5,149 +5,156 @@ import Image from "astro/components/Image.astro";
 ---
 
 <Layout title="Radioblahaj's website!">
-	<main>
-		<h1>
-			Hi, I'm <span id="random"> Arav</span>
-			<code> (he/him)</code>
-		</h1>
-		
-		<i>
-			"I'm young, scrappy, and hungry; I'm not throwing away my shot!" ~
-			Hamilton
-		</i>
-		<br> <br>
+    <main>
+        <div style="line-height: 1;">
+            <h3>~@radioblahaj/site</h3>
+            <h1>Hey I'm <span id="random">Arav!</span></h1>
+            <div class="link-section">
+                <a class="links" href="https://blog.radioblahaj.com">Blog</a>
+                <a class="links" href="https://github.com/radioblahaj">Github</a
+                >
+                <a class="links" href="https://www.instagram.com/radioblahaj/"
+                    >Instagram</a
+                >
+                <a class="links" href="https://files.catbox.moe/ooghu4.pdf"
+                    >CV</a
+                >
+            </div>
+        </div>
+        <p>
+            I'm an incoming freshman at York University from Mississauga (near
+            Toronto).
+        </p>
+        <p>
+            I'm an aspiring polymath, a jack of all trades, master of none. I
+            love going on random rabbit holes and making all sorts of cool
+            projects in my free time :)
+        </p>
+        <p>
+            Some of my interests (in no particular order) include politics,
+            urban planning, public transit, programming (sometimes), poetry,
+            hackathons & meetups, and communities. I also really love music, and
+            you'll often find me with my headphones on or <a href="/now">
+                songwriting</a
+            > at all hours of the day
+        </p>
+        <!-- <p>
+            Quick fun fact: I used to play the drum for 4 years, the flute for
+            1.5 years, and the saxophone for 4 months.
+        </p> -->
 
-		<p>
-			I'm a senior from Mississauga (near Toronto) who loves public
-			transit, urban planning, books (a little bit of everything), reading
-			magazines and newspapers, doing sound for school events
-			^.^ programming (sometimes), running/building
-			online communities, and running <span id="holder">[hackathons]</span>! 
-			<span id="expand">(I've organized 3 hackathons in Toronto, and helped with 2 other hackathons in Vermont & New Delhi!)</span>
-			
-		</p>
+        <p>
+            Right now, I'm working on starting an event incubator and community
+            for whimiscal and curious young makers with <a
+                href="lu.ma/blahaj-diy">BlahajDIY</a
+            >! If you're in Toronto, you should check it out ;)
+        </p>
 
-		<p> I also sometimes write musings on things I've done or find interesting, you can find my <a class="bold-link" href="https://blog.radioblahaj.com"> blog </a> here! </p>
+        <p>
+            In the past, I've ran community operations at <a
+                href="https://hackclub.com"
+                class="wavy">Hack Club</a
+            >, organized hackathons and meetups all over the world, played the
+            drums for 4 years, and <small>
+                ran a podcast from 2021 to 2022 where I interviewed SaaS
+                founders 🙈</small
+            >
+        </p>
 
-		<p>
-			 In my free time, I like spending time with my
-			friends, working on projects, watching netflix, listening to music,
-			and playing with my siblings
-		</p>
-		
-		<p>
-<p>
-right now, I'm trying to build <a href="https://lu.ma/blahajdiy" class="bold-link"> BlahajDIY </a>, an event incubucator for whimiscal and diverse events for young adults in Toronto! I'm also experimenting with side projects like <a href="https://github.com/radioblahaj/airport" class="bold-link"> Airport </a>, a terminal utility to view detailed light data for flights near you (by IATA code). Before this summer is over, I want to make some small tools for local Mississauga stuff hopefully :)
-</p> 
-			I also used to work at <a href="https://hackclub.com" class="bold-link">
-				Hack Club
-			</a> where I lead community operations overseeing & helping with virtual
-			events, fraud, newsletters and a little bit of everything else! I also
-			co-lead the moderation dept for a community of 60,000+ teenagers 🙈
-		</p>
-		<p>
-			Last May, I helped organize <a
-				class="bold-link"
-				href="https://apocalypse.hackclub.com">Apocalypse.</a
-			> Apocalypse was a labour of love, a hackathon me and a few friends came
-			up with in Septmember 2023, and it ended up becoming Canada's largest
-			High School hackathon EVER
-		</p>
-		<iframe
-			width="560"
-			height="315"
-			src="https://www.youtube.com/embed/QvCoISXfcE8?si=aKA84EcTOBX1c8fR"
-			title="YouTube video player"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			referrerpolicy="strict-origin-when-cross-origin"
-			allowfullscreen></iframe>
-		<p>
-			The best place to contact me would be on Slack (@radioblahaj) or
-			email me at my name @ this domain. I'm @radioblahaj on most social media
-			platforms, and you can also signal me at @radioblahaj.18.
-		</p>
-		<p>See you around, Arav</p>
-		<img
-			alt="a drawing of a blahaj with a yellow background, and two small white bars on both sides. The Blahaj is smiling with two eyes"
-			src="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"
-		/>
-	</main>
-	<script>
-		let element = document.getElementById("random");
-		let holder = document.getElementById("holder");
-		let expand = document.getElementById("expand");
-		let display = "none";
+        <!-- <p>Now playing on Spotify: <span id="spotify-song"> song here</span></p> -->
+        <h3>Stuff I'm proud of:</h3>
+        <ul>
+            <li>
+                <a href="https://apocalypse.hackclub.com">⭐ Apocalypse</a>:
+                Toronto's largest/longest high school hackathon in May 2024 at
+                Shopify HQ! I was one of the main organizers and mainly helped
+                with logistics! Also the project I'm most proud of :)
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >AngelHacks Toronto</a
+                >: The first hackathon I ran in Toronto with a friend! It was a
+                12 hour game jam that we may or may not have ran <del
+                    >illegaly</del
+                > in a Wework.
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >Circuit Island</a
+                >: A picnic meetup and hardware jam for 50+ Toronto hack
+                clubbers on the Toronto Islands
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >Firehose</a
+                >: A Slack bot to bring discord-style moderation tools to Slack.
+                Built during my summer internship at Hack Club HQ in the summer
+                of 2024.
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >YouFeelWeFeel</a
+                >: A custom feelings logger and journaling API inspired by How
+                We Feel!
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel">Epoch</a
+                >: A 42 hour high school hackathon in New Delhi in January 2023.
+                I helped coordinate workshops and other organizing support.
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >Human Turn Singals</a
+                >: Turn signals but for humans! A hackathon project built with
+                freinds at Scrapyard, came in 4th place :)
+            </li>
+            <li>
+                <a href="https://github.com/radioblahaj/youfeelwefeel"
+                    >Bill 212 Cheatsheet</a
+                >: A summary I made of the changes to Bill 212 (Ontario's bike
+                lane bill) that went viral on r/Toronto
+            </li>
+        </ul>
+        <p>
+            If you'd like to get in touch, I'm @radioblahaj in most platforms.
+            You can also email me at my name [@] this domain or signal me
+            @radioblahaj.18.
+        </p>
+        <h2>Photos</h2>
+        <!-- <h3>A collection of my favorite photos and friends :)</h3>
+        <!-- <div class="photos">
+            <img
+                class="photos"
+                src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4280428a7e980f161d3b846d394242a6755f7475_image.png"
+            />
+        </div> -->
+    </main>
+    <script>
+        let element = document.getElementById("random");
+        let holder = document.getElementById("hide-video");
+        let expand = document.getElementById("expand");
+        let display = "none";
 
-		holder.addEventListener("click", function () {
-			if (display == "none") {
-				display = "block";
-				expand.style.display = display;
-			} else {
-				 display = "none";
-				expand.style.display = display;
-			}
-		});
+        holder.addEventListener("click", function () {
+            if (display == "none") {
+                display = "block";
+                expand.style.display = display;
+            } else {
+                display = "none";
+                expand.style.display = display;
+            }
+        });
 
-		let colors = [
-			"orange",
-			"white",
-			"skyblue",
-			"mustardyellow",
-			"deeppink",
-		];
-		setInterval(function () {
-			element.style.color =
-				colors[Math.floor(Math.random() * colors.length)];
-		}, 1000);
-	</script>
+        let colors = [
+            "orange",
+            "white",
+            "skyblue",
+            "mustardyellow",
+            "deeppink",
+        ];
+        setInterval(function () {
+            element.style.color =
+                colors[Math.floor(Math.random() * colors.length)];
+        }, 1000);
+    </script>
 </Layout>
-
-<style>
-	#expand {
-		display: none;
-	}
-
-	p::selection {
-		background: rgb(30, 41, 156);
-	}
-
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	#holder {
-		color: #00ff2f;
-		text-decoration: underline;
-		ecoration
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		margin-bottom: 1em;
-	}
-	.bold-link {
-		color: #ffff00;
-	}
-	
-
-	code {
-		font-size: 24px;
-		font-weight: bold;
-	}
-</style>

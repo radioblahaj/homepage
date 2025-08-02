@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+    title: string;
 }
 
 const { title } = Astro.props;
@@ -8,34 +8,62 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Arav's home on the internet!" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<script defer data-domain="radioblahaj.com" src="https://plausible.io/js/script.js"></script>
-	</head>
-	<body>
-		<slot />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Arav's home on the internet!" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://ca.slack-edge.com/T0266FRGM-U01MPHKFZ7S-abe73849817a-512"
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <script
+            defer
+            data-domain="radioblahaj.com"
+            src="https://plausible.io/js/script.js"></script>
+    </head>
+    <body>
+        <slot />
+    </body>
 </html>
 <style is:global>
+    html {
+        background-color: #fff9e3;
+        font-family: system-ui, sans-serif;
+    }
 
-	html {
-		font-family: system-ui, sans-serif;
-		background: #6a00ff;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+    h2 {
+    }
+
+    .link-section {
+        margin: 2px;
+    }
+    .links {
+        text-decoration: solid underline deeppink 2px;
+    }
+    a {
+        color: #eb3dd7;
+    }
+
+    .underline {
+        text-decoration: solid underline mediumpurple 4px;
+    }
+    .wavy {
+        text-decoration: purple wavy underline;
+    }
+
+    .photos {
+        width: 1000px;
+        height: 50px;
+    }
+    main {
+        margin: auto;
+        padding: 1rem;
+        width: 800px;
+        max-width: calc(100% - 2rem);
+        font-size: 20px;
+        line-height: 1.6;
+    }
 </style>
