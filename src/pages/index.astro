@@ -2,6 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Image from "astro/components/Image.astro";
+import childProcess from "child_process";
+
+const hash = childProcess.execSync("git rev-parse --short HEAD").toString().trim();
+let getDate = childProcess.execSync(`git show -s --format="%ci" ${hash}`).toString().slice(0,10);
+const options = { year: "numeric", month: "long", day: "numeric" };
+getDate = new Date(getDate).toLocaleDateString("en-CA", options);
+
 ---
 
 <Layout title="Radioblahaj's website!">
@@ -9,21 +16,22 @@ import Image from "astro/components/Image.astro";
         <div style="line-height: 1;">
             <h3 style="color: #6996AD">~@radioblahaj/site</h3>
             <h1 style="" >
-                Hey I'm <span id="random">radioblahaj</span>
+                Hey I'm <span style="color:#0a0a0a">radioblahaj</span>
             </h1>
         </div>
         <p>
-            I'm Arav, a 19 year old from Toronto, Ontairo! 
+           My name is Arav Narula, and I'm a 19 year old from Toronto
         </p>
-        <p> I love public transit, going on random rabbit holes, and thinking about cities and politics.</p>
-        <p> I like bringing people together and crafting expriences that change their lives. Community building is at the heart of everything I do.</p>
+        <p> I love public transit, going on random rabbit holes, and learning new things</p>
+                  <p> In my free time, I like exploring cities, watching sports, reading books, listening to music, and watching whatever my recent obession is on TV</p>
 
-        <p> I used to work at <a href="https://hackclub.com"> Hack Club</a> running commmunity operations for the entire community and programs like <a href="https://arcade.hackclub.com"> Arcade </a> and <a href="https://highseas.hackclub.com"> High Seas</a>. 
-        <p> Right now, I'm studying social science & urban planning at York Univeristy..</p>
-          
+
+        <p> In the past, I worked at <a href="https://hackclub.com"> Hack Club</a> running commmunity operations for the entire community and programs like <a href="https://arcade.hackclub.com"> Arcade </a> and <a href="https://highseas.hackclub.com"> High Seas</a>
+        <p> Currently, I'm studying social science & urban planning at York Univeristy</p>
+
         <p> </p>
             <details>
-                <summary> <b> What have I been upto the last few months?</b> </summary>
+                <summary> <b> What have I been up to? (now)</b> </summary>
         <div>
             <details>
                 <summary> July 2026
@@ -80,15 +88,27 @@ import Image from "astro/components/Image.astro";
                             </details>
 
     </div>         <!-- <p>Now playing on Spotify: <span id="spotify-song"> song here</span></p> -->
-         <h2> Stuff I'm proud of:</h2>
-         <h3> Events</h3>
-        <center>
-            <img src="/images/IMG_0193.jpg" alt="My Image" style="width: 500px; height: 400px" />
-        </center>
+         <h2 class="underline"> Stuff I'm proud of:</h2>
+         <div>
+         <h3 class="underline-subheading"> Events</h3>
+         <div style="display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4px;">
+  <div style="">
+      <img src="images/IMG_0193.jpg" style="object-fit: cover; width: 400px; height:300px">
+      <sub class="subtitle"> Opening Ceremony at HCTG! </sub>
+      <br>
+      <img src="images/Photo from Google Photos (7).jpg" style="object-fit: cover; width: 400px; height:300px">
+    <sub class="subtitle"
+> Group photo after Circuit Island!</sub>
+  </div>
         <ul> 
             <li>
                 <a href="https://game.hackclub.com"> Hack Club: The Game</a>:
-                A territory capture came where teenagers came together to solve challenges and compete against each other for control of Manhattan. Served as the game designer designed and helped organize the event. It took place in May 2026, and was inspired by <a href="https://www.youtube.com/c/jetlagthegame">Jet Lag: The Game</a>.
+                A territory capture came where teenagers came together to solve challenges and compete against each other for control of Manhattan. Served as the game designer and helped organize the event. It took place in May 2026, and was inspired by <a href="https://www.youtube.com/c/jetlagthegame">Jet Lag: The Game</a>.
             </li>
               <li>
                     <a href="https://apocalypse.hackclub.com">Apocalypse</a>:
@@ -98,36 +118,51 @@ import Image from "astro/components/Image.astro";
                 </li>
                  <li>
                     <a href="https://lu.ma/circuit-island">Circuit Island</a>: A
-                    picnic meetup and hardware jam for 50+ Toronto hack clubbers
+                    picnic meetup and hardware jam for 50+ high schoolers
                     on the Toronto Islands
                 </li>
 
         </ul>
-        <h3> Projects </h3>
+    </div>
+    <div style="display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 8px;">
+    <h3 class="underline-subheading-2"> Selected Projects </h3>
         <ul>
              <li>
                     <a href="https://github.com/hackclub/firehose"
                         >Firehose</a
                     >: A Slack bot to bring discord-style moderation tools to
                     Slack. Built during my summer internship at Hack Club HQ in
-                    the summer of 2024.
+                    the summer of 2024
                 </li>
                 <li>
                     <a href="https://github.com/radioblahaj/youfeelwefeel"
                         >YouFeelWeFeel</a
                     >: A custom feelings logger and journaling API inspired by
-                    How We Feel!
+                    How We Feel
                 </li>
                  <li>
                     <a
                         href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/2fd9e2172d6c910921d91a953cc463db68083508_20250302_115010.mp4"
                         >Human Turn Signals</a
                     >: Turn signals but for humans! A hackathon project built
-                    with freinds at Scrapyard, came in 4th place :)
+                    with freinds at Scrapyard, came in 4th place :
                 </li>
+                
 
         </ul>
-        <h3> Written works:</h3>
+    </div>
+     <div style="display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4px;">
+        <h3 class="underline-subheading-3"> Written works:</h3>
         <ul>
               <li>
                     <a
@@ -143,8 +178,10 @@ import Image from "astro/components/Image.astro";
                 >: An archived copy of a blog post on running a meetup and how others can run their own
             </li>
         </ul>
-<div>
+    </div>
   <div>
+   
+
 <p>
                 If you'd like to get in touch, I'm @radioblahaj in most
                 platforms. You can also email me at my name [@] this domain or
@@ -160,29 +197,30 @@ import Image from "astro/components/Image.astro";
                 style="width: 300px; height:300px"
             />
 </div>
-    
+    <div>
+        
+    </div>
  <div>
-            <img src="https://saahild.com/buttons/hackclub.png" />
-            <img src="https://cyber.dabamos.de/88x31/cssdif.gif" />
 
             <a href="https://3kh0.net">
                 <img src="https://files.catbox.moe/ktu37j.png" /></a
             >
-
-            <!-- <img src="https://88x31.kate.pet/nb_noproblem.jpg" height="31" /> -->
-            <a href="https://prpl.wtf">
-                <img src="https://prpl.wtf/assets/images/88x31/prpl_wtf.gif" />
-            </a>
-            <img src="https://88x31.kate.pet/madewith_macos.gif" height="31" />
-            <img src="https://88x31.kate.pet/button25.gif" height="31" />
-
+            <a href="https://froppii.dev/">
+                <img src="https://froppii.dev/button.gif" /></a>
             <a href="https://saahild.com/">
                 <img
                     src="https://raw.githubusercontent.com/NeonGamerBot-QK/NeonGamerBot-QK/refs/heads/main/webring.gif"
                 />
             </a>
+
         </div>
+        <footer>
+            <span style="font-size: 14px;">
+                <b> Latest commit: <a href=`github.com/radioblahaj/site/commit/${hash}`>{hash}</a> on {getDate}</b>
+            </span>
+        </footer>
     </main>
+   
 </Layout>
 
 <!-- <h2>Photos</h2> -->
@@ -191,6 +229,7 @@ import Image from "astro/components/Image.astro";
             class="photos"
             src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4280428a7e980f161d3b846d394242a6755f7475_image.png"
             /> </div> -->
+
 
 <script>
     let element = document.getElementById("random");

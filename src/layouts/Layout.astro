@@ -46,6 +46,19 @@ const { title } = Astro.props;
     .underline {
         text-decoration: solid underline mediumpurple 4px;
     }
+
+    .underline-subheading {
+        text-decoration: solid underline rgb(30, 152, 245) 2px;
+
+    }
+   
+     .underline-subheading-2 {
+        text-decoration: solid underline rgb(167, 222, 164) 2px;
+    }
+
+     .underline-subheading-3 {
+        text-decoration: solid underline rgb(255, 184, 52) 2px;
+    }
     .wavy {
         text-decoration: purple wavy underline;
     }
@@ -61,5 +74,15 @@ const { title } = Astro.props;
         max-width: calc(100% - 2rem);
         font-size: 20px;
         line-height: 1.6;
+    }
+
+    .subtitle {
+         display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    ::selection {
+        background-color: #c1ff23;
     }
 </style>
