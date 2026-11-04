@@ -1,10 +1,4 @@
 # Personal Website
-<img width="1140" alt="image" src="https://github.com/user-attachments/assets/bc1e453b-5799-4e53-98f9-7e1911849e50" />
+<img width="1470" height="921" alt="file-9272e7d43c1f130cc1b1e960349dd204" src="https://github.com/user-attachments/assets/0d76f874-7897-447a-8667-9648ddf4c398" />
 
-My personal website built with Astro. It has a lot of fun little features like:
-
-- A color changing header (Arav changes colour randomly from a list of 4 colours)
-- Expandable text (try clicking on hackathons, I didn't want to yap for hours on my website and make it too much information so I added a button that lets you toggle extra information if you're curios, and toggle it on and off)
-- Some custom styling for links and content (link colours, and a custom selection colour. Try selecting some text and see it change colour)
-- A /now page for people to see what I'm up to right now
-  
+My personal website built with Astro!
